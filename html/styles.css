@@ -1,0 +1,193 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #00152b;
+    /* font-family: lucida sans unicode,lucida grande,sans-serif; */
+    font-family: Helvetica;
+
+}
+
+
+
+.fb-link:hover {
+    opacity: 0.7;
+}
+/********************/
+/* PC / liggende    */
+/********************/
+@media (min-aspect-ratio: 10/9)   {
+    .bg-container {
+        /* width: 90%; */
+        height: 100%;
+        margin: auto;
+        background-image: url('./img/landscape-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    .meny {
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 7%;
+        width: 200px;
+        align-items: center;
+
+    }
+    .turneplan {
+        position: relative;
+        text-align: center;
+        margin-top: 10%;
+        font-size: x-large;
+        z-index: 100;
+        color: white;
+    }
+
+    .fb-link {
+        position: relative;
+        align-self: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        font-size: x-large;
+        width: 80px;
+        height: 80px;
+        background-color: transparent;
+    }
+    @media (min-width: 1200px) {
+        .meny {
+            margin-left: 10%;
+            margin-top: 15%;
+            width: 15vw;
+    
+        }
+        .turneplan {
+            white-space: nowrap;
+            text-align: center;
+            font-size: 3vw ;
+        }
+        .fb-link {
+            margin-left: 10%;
+        }        
+    }    
+}
+
+/********************/
+/* Tablet             */
+/********************/
+@media (min-aspect-ratio: 6/9) and (max-aspect-ratio: 10/9)    {
+ 
+    .bg-container {
+        width: 100%;
+        height: 100%;
+        background-image: url('./img/4_3-1.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .meny {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        align-items: center;
+
+    }
+    .turneplan {
+        position: relative;
+        text-align: center;
+        margin-top: 10%;
+        font-size: x-large;
+        z-index: 100;
+        color: white;
+    }
+
+    .fb-link {
+        position: relative;
+        align-self: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        font-size: x-large;
+        width: 80px;
+        height: 80px;
+        background-color: transparent;
+    }
+
+}
+
+/********************/
+/* Mobil / portrett */
+/********************/
+@media (max-aspect-ratio: 6/9) {
+
+    .bg-container {
+        width: 100%;
+        height: 100%;
+        background-image: url('./img/porttrait-1.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .meny {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        align-items: center;
+
+    }
+    .turneplan {
+        position: relative;
+        text-align: center;
+        margin-top: 10%;
+        font-size: x-large;
+        z-index: 100;
+        color: white;
+    }
+
+    .fb-link {
+        position: relative;
+        align-self: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        font-size: x-large;
+        width: 80px;
+        height: 80px;
+        background-color: transparent;
+    }
+    
+}
+
+
+
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: lightblue;
+    text-decoration: none;
+}
