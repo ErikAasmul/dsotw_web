@@ -4,7 +4,6 @@ body {
     height: 100%;
     overflow: hidden;
     background-color: #00152b;
-    /* font-family: lucida sans unicode,lucida grande,sans-serif; */
     font-family: Helvetica, serif;
 
 }
@@ -17,63 +16,46 @@ body {
 /********************/
 /* PC / liggende    */
 /********************/
-@media (min-aspect-ratio: 10/9) {
+@media (min-aspect-ratio: 111/90) {
     .bg-container {
-        width: 100%;
-        height: 100%;
-        /* margin: auto; */
+        min-width: 100%;
+        height: 86%;
+        margin: auto;
         background-image: url('./img/landscape-1.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top center;
-    }
-
-    .meny {
-        position: absolute;
-        margin-left: 1%;
-        margin-top: 7%;
-        width: 200px;
-        align-items: center;
-
+        background-position: top;
     }
 
     .turneplan {
-        position: relative;
-        text-align: center;
-        margin-top: 10%;
-        font-size: x-large;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 3vw;
         z-index: 100;
         color: white;
     }
 
     .fb-link {
-        position: relative;
+        position: absolute;
         align-self: center;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 15%;
-        font-size: x-large;
+        right: 3%;
+        bottom: 2%;
+    }
+
+    .fb-icon {
         width: 40px;
         height: 40px;
         background-color: transparent;
     }
 
     @media (min-width: 1200px) {
-        .meny {
-            margin-left: 10%;
-            margin-top: 15%;
-            width: 15vw;
 
-        }
-
-        .turneplan {
-            white-space: nowrap;
-            text-align: center;
-            font-size: 3vw;
-        }
-
-        .fb-link {
-            margin-left: 25%;
+        .fb-icon {
+            width: 60px;
+            height: 60px;
         }
     }
 }
@@ -81,7 +63,7 @@ body {
 /********************/
 /* Tablet             */
 /********************/
-@media (min-aspect-ratio: 6/9) and (max-aspect-ratio: 10/9) {
+@media (min-aspect-ratio: 59/90) and (max-aspect-ratio: 111/90) {
 
     .bg-container {
         width: 100%;
@@ -92,33 +74,27 @@ body {
         background-position: top;
     }
 
-    .meny {
+    .turneplan {
         position: absolute;
         bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
-        width: 200px;
-        align-items: center;
-    }
-
-    .turneplan {
-        position: relative;
-        text-align: center;
-        margin-top: 10%;
-        font-size: x-large;
+        white-space: nowrap;
+        font-size: 5vw;
         z-index: 100;
         color: white;
     }
 
     .fb-link {
-        position: relative;
+        position: absolute;
         align-self: center;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 15%;
-        font-size: x-large;
-        width: 40px;
-        height: 40px;
+        right: 3%;
+        bottom: 4%;
+    }
+
+    .fb-icon {
+        width: 6vw;
+        height: 6vw;
         background-color: transparent;
     }
 
@@ -127,7 +103,7 @@ body {
 /********************/
 /* Mobil / portrett */
 /********************/
-@media (max-aspect-ratio: 6/9) {
+@media (max-aspect-ratio: 59/90) {
 
     .bg-container {
         width: 100%;
@@ -138,34 +114,28 @@ body {
         background-position: top;
     }
 
-    .meny {
+    .turneplan {
         position: absolute;
-        bottom: 10%;
+        margin-top: 130%;
         left: 50%;
         transform: translateX(-50%);
-        width: 200px;
-        align-items: center;
-
-    }
-
-    .turneplan {
-        position: relative;
-        text-align: center;
-        margin-top: 10%;
-        font-size: x-large;
+        font-size: xx-large;
+        white-space: nowrap;
         z-index: 100;
         color: white;
     }
 
     .fb-link {
-        position: relative;
+        position: absolute;
         align-self: center;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 15%;
-        font-size: x-large;
-        width: 40px;
-        height: 40px;
+        bottom: 2%;
+    }
+
+    .fb-icon {
+        width: 60px;
+        height: 60px;
         background-color: transparent;
     }
 }
@@ -190,6 +160,6 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: lightblue;
+    color: white;
     text-decoration: none;
 }
